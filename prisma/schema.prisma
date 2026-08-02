@@ -1,0 +1,152 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  category    String   // architecture | interior | finishing | grey-structure | renovation | furnishing | landscaping
+  status      String   @default("completed") // completed | ongoing
+  location    String?
+  areaSqft    Int?
+  year        Int?
+  description String?
+  services    String[]
+  coverImage  String?
+  images      String[]
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("projects")
+}
+
+model Update {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  excerpt     String?
+  content     String
+  category    String?
+  coverImage  String?
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("updates")
+}
+
+model Testimonial {
+  id          String   @id @default(cuid())
+  clientName  String
+  projectType String?
+  rating      Int      @default(5)
+  feedback    String
+  photoUrl    String?
+  videoUrl    String?
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+
+  @@map("testimonials")
+}
+
+model Supplier {
+  id          String   @id @default(cuid())
+  name        String
+  logoUrl     String?
+  description String?
+  website     String?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  @@map("suppliers")
+}
+
+model QuotationRequest {
+  id          String   @id @default(cuid())
+  name        String
+  email       String?
+  phone       String
+  services    String[]
+  location    String?
+  areaSqft    String?
+  budgetRange String?
+  message     String?
+  status      String   @default("new") // new | reviewing | responded
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("quotation_requests")
+}
+
+model Property {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  status      String   @default("for-sale") // for-sale | for-rent | sold | rented
+  type        String   // house | plot | commercial | apartment
+  price       String?  // Textual to allow "2.5 Crore" etc.
+  priceNumeric Float?  // Raw numeric value for filtering (e.g. 25000000)
+  location    String?
+  areaSqft    Int?
+  marla       Float?
+  beds        Int?
+  baths       Int?
+  description String?
+  features    String[]
+  coverImage  String?
+  images      String[]
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("properties")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String?
+  message   String
+  status    String   @default("new") // new | read
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("contact_messages")
+}
+
+model SiteSettings {
+  id          String   @id @default("global")
+  email       String?
+  phone       String?
+  address     String?
+  mapUrl      String?
+  facebook    String?
+  instagram   String?
+  youtube     String?
+  linkedin    String?
+  updatedAt   DateTime @updatedAt
+
+  @@map("site_settings")
+}
+
+model AdminAccount {
+  id           String   @id @default("admin")
+  email        String   @unique
+  passwordHash String
+  updatedAt    DateTime @updatedAt
+
+  @@map("admin_account")
+}

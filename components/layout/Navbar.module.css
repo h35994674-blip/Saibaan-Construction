@@ -1,0 +1,223 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-navbar);
+  transition: background var(--transition-slow), backdrop-filter var(--transition-slow),
+    border-color var(--transition-slow), box-shadow var(--transition-slow);
+  background: rgba(18, 18, 20, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+}
+
+.navbar.scrolled {
+  background: rgba(18, 18, 20, 0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom-color: var(--gold-border);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 76px;
+}
+
+.logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  object-fit: cover;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+/* Desktop Nav */
+.desktopNav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background var(--transition-fast);
+  letter-spacing: 0.01em;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: var(--gold);
+}
+
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background: var(--gold);
+  border-radius: var(--radius-full);
+}
+
+.chevron {
+  transition: transform var(--transition-fast);
+  opacity: 0.6;
+}
+
+.navItem:hover .chevron {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg), var(--shadow-gold);
+  padding: 0.5rem;
+  animation: fadeInUp 0.2s ease;
+  z-index: 1;
+}
+
+/* Services dropdown wider */
+.navItem:nth-child(3) .dropdown {
+  min-width: 260px;
+}
+
+.dropdownList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dropdownItem {
+  display: block;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.dropdownItem:hover,
+.dropdownItem.activeDropdown {
+  background: var(--gold-subtle);
+  color: var(--gold);
+}
+
+/* CTA Button */
+.ctaBtn {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* Mobile Toggle */
+.menuToggle {
+  display: none;
+  color: var(--text-primary);
+  padding: 0.375rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.menuToggle:hover {
+  color: var(--gold);
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  background: rgba(18, 18, 20, 0.97);
+  backdrop-filter: blur(24px);
+  border-top: 1px solid var(--gold-border);
+  padding: 1.5rem;
+  display: none;
+  animation: fadeIn 0.2s ease;
+}
+
+.mobileNavList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mobileNavLink {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.mobileNavLink:hover,
+.mobileNavLink.active {
+  color: var(--gold);
+  background: var(--gold-subtle);
+}
+
+.mobileSubList {
+  list-style: none;
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+  border-left: 2px solid var(--gold-border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mobileSubLink {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.mobileSubLink:hover {
+  color: var(--gold);
+}
+
+/* ─── Responsive ────────────────── */
+@media (max-width: 1024px) {
+  .desktopNav { display: none; }
+  .ctaBtn { display: none; }
+  .menuToggle { display: flex; margin-left: auto; }
+  .mobileMenu { display: block; }
+}
