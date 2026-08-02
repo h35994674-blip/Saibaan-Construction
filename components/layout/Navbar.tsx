@@ -37,6 +37,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [expandedMobile, setExpandedMobile] = useState<string | null>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -48,10 +49,16 @@ export default function Navbar() {
   useEffect(() => {
     setMenuOpen(false);
     setActiveDropdown(null);
+    setExpandedMobile(null);
   }, [pathname]);
 
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href);
+
+  const toggleMobileSubmenu = (label: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    setExpandedMobile(expandedMobile === label ? null : label);
+  };
 
   return (
     <header
@@ -125,26 +132,38 @@ export default function Navbar() {
             <ul className={styles.mobileNavList}>
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className={`${styles.mobileNavLink} ${isActive(link.href) ? styles.active : ''}`}
-                  >
-                    {link.label}
-                  </Link>
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={link.href}
+                      className={`${styles.mobileNavLink} ${isActive(link.href) ? styles.active : ''} flex-1`}
+                    >
+                      {link.label}
+                    </Link>
+                    {link.children && (
+                      <button 
+                        onClick={(e) => toggleMobileSubmenu(link.label, e)}
+                        className={`p-3 text-[var(--text-secondary)] transition-transform ${expandedMobile === link.label ? 'rotate-180 text-[var(--gold)]' : ''}`}
+                      >
+                        <ChevronDown size={18} />
+                      </button>
+                    )}
+                  </div>
                   {link.children && (
-                    <ul className={styles.mobileSubList}>
-                      {link.children.map((child) => (
-                        <li key={child.label}>
-                          <Link href={child.href} className={styles.mobileSubLink}>
-                            {child.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedMobile === link.label ? 'max-h-[500px] opacity-100 mb-2' : 'max-h-0 opacity-0'}`}>
+                      <ul className={styles.mobileSubList}>
+                        {link.children.map((child) => (
+                          <li key={child.label}>
+                            <Link href={child.href} className={styles.mobileSubLink}>
+                              {child.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   )}
                 </li>
               ))}
-              <li>
+              <li className="pt-4 mt-2 border-t border-[var(--gold-border)]">
                 <Link href="/get-quotation" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                   Get Quotation
                 </Link>
