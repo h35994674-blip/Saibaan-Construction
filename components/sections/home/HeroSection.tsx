@@ -7,14 +7,7 @@ import { siteConfig } from '@/config/site';
 
 export function HeroSection() {
   const [year, setYear] = React.useState(1900);
-  const [shouldLoadVideo, setShouldLoadVideo] = React.useState(false);
-
   React.useEffect(() => {
-    // Prevent 90MB video download on mobile devices
-    if (window.innerWidth >= 768) {
-      setShouldLoadVideo(true);
-    }
-
     let start = 1900;
     const end = 1988;
     const duration = 2000;
@@ -37,24 +30,16 @@ export function HeroSection() {
     <section className="relative h-[100svh] min-h-[600px] w-full overflow-hidden flex items-center">
       {/* Video Background */}
       <div className="absolute inset-0 z-0 bg-[#080808]">
-        {/* On mobile, only the poster shows. On desktop, the video mounts and plays. */}
-        {shouldLoadVideo ? (
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover opacity-60 transition-opacity duration-1000"
-            poster="/og-image.jpg"
-          >
-            <source src="/videos/hero.mp4" type="video/mp4" />
-          </video>
-        ) : (
-          <div 
-            className="w-full h-full bg-cover bg-center opacity-60" 
-            style={{ backgroundImage: 'url(/og-image.jpg)' }} 
-          />
-        )}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-60"
+          poster="/og-image.jpg"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-black/40 to-black/20" />
       </div>
