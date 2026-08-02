@@ -4,11 +4,18 @@ const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
 };
 
-// Force connection_limit=1 on serverless environments to prevent Supabase pool exhaustion
+// Force connection_limit=1 and pgbouncer=true on serverless environments
 let databaseUrl = process.env.DATABASE_URL || '';
-if (process.env.NODE_ENV === 'production' && databaseUrl && !databaseUrl.includes('connection_limit=')) {
-  const separator = databaseUrl.includes('?') ? '&' : '?';
-  databaseUrl += `${separator}connection_limit=1&pool_timeout=20`;
+if (process.env.NODE_ENV === 'production' && databaseUrl) {
+  if (!databaseUrl.includes('pgbouncer=true')) {
+    databaseUrl += databaseUrl.includes('?') ? '&pgbouncer=true' : '?pgbouncer=true';
+  }
+  if (!databaseUrl.includes('connection_limit=')) {
+    databaseUrl += '&connection_limit=1';
+  }
+  if (!databaseUrl.includes('pool_timeout=')) {
+    databaseUrl += '&pool_timeout=20';
+  }
 }
 
 export const prisma =
