@@ -29,7 +29,7 @@ export function CTABanner() {
               </h2>
               
               <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl mb-12 leading-relaxed font-light">
-                Let's discuss your project. Get a customized quotation and discover how Saiban Construction can bring your vision to life with uncompromising quality.
+                Let's discuss your project. Get a customized quotation and discover how Saibaan Construction can bring your vision to life with uncompromising quality.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full sm:w-auto">

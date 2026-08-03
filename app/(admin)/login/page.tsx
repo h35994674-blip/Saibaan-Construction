@@ -41,7 +41,7 @@ export default function LoginPage() {
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden">
         <Image
           src="/portfolio-hero.jpg"
-          alt="Saiban Construction Architecture"
+          alt="Saibaan Construction Architecture"
           fill
           priority
           className="object-cover scale-105 animate-[slow-zoom_20s_ease-in-out_infinite_alternate]"
@@ -60,7 +60,7 @@ export default function LoginPage() {
             <span className="text-gold">digital presence.</span>
           </h2>
           <p className="text-white/70 text-lg max-w-md leading-relaxed font-light">
-            Sign in to the Saiban Construction command center to oversee properties, portfolio projects, and client updates.
+            Sign in to the Saibaan Construction command center to oversee properties, portfolio projects, and client updates.
           </p>
         </div>
       </div>
@@ -82,7 +82,7 @@ export default function LoginPage() {
 
         <div className="w-full max-w-[420px] relative z-10">
           <div className="mb-10">
-            <Image src="/logo.png" alt="Saiban Construction" width={100} height={100} className="rounded-full object-cover mb-8 shadow-xl border border-white/10" />
+            <Image src="/logo.png" alt="Saibaan Construction" width={100} height={100} className="rounded-full object-cover mb-8 shadow-xl border border-white/10" />
             <h1 className="text-3xl font-heading font-bold text-white mb-2">Welcome back</h1>
             <p className="text-[var(--text-muted)] text-sm">Please enter your admin credentials to continue.</p>
           </div>
@@ -156,7 +156,7 @@ export default function LoginPage() {
 
           <div className="mt-12 text-center">
             <p className="text-xs text-[var(--text-muted)]">
-              &copy; {new Date().getFullYear()} Saiban Construction. Secure Admin Portal.
+              &copy; {new Date().getFullYear()} Saibaan Construction. Secure Admin Portal.
             </p>
           </div>
         </div>

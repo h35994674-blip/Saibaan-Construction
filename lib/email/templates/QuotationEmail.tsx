@@ -52,7 +52,7 @@ export const QuotationEmail: React.FC<Readonly<QuotationEmailProps>> = ({
     )}
 
     <p style={{ marginTop: '30px', fontSize: '12px', color: '#888' }}>
-      This email was sent from the Saiban Construction website quotation form. You can view and manage this request in the Admin Panel.
+      This email was sent from the Saibaan Construction website quotation form. You can view and manage this request in the Admin Panel.
     </p>
   </div>
 );

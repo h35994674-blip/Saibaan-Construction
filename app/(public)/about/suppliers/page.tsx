@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export const metadata = generateMetadata({
   title: 'Our Suppliers',
-  description: 'We partner with the finest suppliers and premium brands to ensure the highest quality materials for every Saiban Construction project.',
+  description: 'We partner with the finest suppliers and premium brands to ensure the highest quality materials for every Saibaan Construction project.',
 });
 
 export default async function SuppliersPage() {

@@ -25,7 +25,7 @@ export async function submitContactForm(data: {
     const { error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: [NOTIFICATION_EMAIL],
-      subject: `New Inquiry: ${data.subject} | Saiban Construction`,
+      subject: `New Inquiry: ${data.subject} | Saibaan Construction`,
       react: ContactEmail(data),
     });
 

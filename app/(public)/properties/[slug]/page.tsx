@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!property) return {};
 
   return {
-    title: `${property.title} | Saiban Construction`,
+    title: `${property.title} | Saibaan Construction`,
     description: property.description?.substring(0, 160) || `View details for ${property.title}`,
   };
 }

@@ -8,7 +8,7 @@ import { PropertySearch } from '@/components/forms/PropertySearch';
 import { CTABanner } from '@/components/sections/home/CTABanner';
 
 export const metadata = {
-  title: 'Real Estate Properties | Saiban Construction',
+  title: 'Real Estate Properties | Saibaan Construction',
   description: 'Explore our exclusive real estate listings including houses, plots, and commercial spaces for sale or rent.',
 };
 
@@ -24,7 +24,7 @@ export default function PropertiesPage({
         <div className="absolute inset-0 z-0">
           <img
             src="/properties-hero.jpg"
-            alt="Saiban Construction Properties"
+            alt="Saibaan Construction Properties"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#121214]/95 via-[#121214]/70 to-[#121214]/30" />

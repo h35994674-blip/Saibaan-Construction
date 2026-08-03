@@ -1,9 +1,9 @@
 // Site-wide configuration
 export const siteConfig = {
-  name: 'Saiban Construction',
+  name: 'Saibaan Construction',
   tagline: 'Building Dreams, Crafting Excellence',
   description:
-    'Saiban Construction offers premium architecture, interior design, finishing, grey structure, renovation, furnishing, and landscaping services across Pakistan.',
+    'Saibaan Construction offers premium architecture, interior design, finishing, grey structure, renovation, furnishing, and landscaping services across Pakistan.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.saibaanconstruction.com',
   ogImage: '/og-image.jpg',
   email: 'contact@saibaanconstruction.com',

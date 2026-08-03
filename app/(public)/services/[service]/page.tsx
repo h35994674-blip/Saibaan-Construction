@@ -69,7 +69,7 @@ export default function ServiceDetailPage({ params }: { params: { service: strin
                 Excellence in {serviceData.shortTitle}
               </h2>
               <p className="text-[var(--text-secondary)] text-lg mb-8 leading-relaxed">
-                At Saiban Construction, our {serviceData.title.toLowerCase()} are designed to exceed expectations. We combine innovative techniques with proven methodologies to deliver results that are both visually stunning and structurally sound.
+                At Saibaan Construction, our {serviceData.title.toLowerCase()} are designed to exceed expectations. We combine innovative techniques with proven methodologies to deliver results that are both visually stunning and structurally sound.
               </p>
               
               <h3 className="text-xl font-heading font-semibold text-white mb-6">

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!project) return {};
   return getSeoMetadata({
     title: project.title,
-    description: project.description || `Explore ${project.title} by Saiban Construction.`,
+    description: project.description || `Explore ${project.title} by Saibaan Construction.`,
     image: project.coverImage || undefined,
   });
 }
@@ -133,7 +133,7 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
               <h2 className="section-title text-white mb-6">About This Project</h2>
 
               <p className="text-[var(--text-secondary)] text-lg leading-relaxed mb-10">
-                {project.description || 'This is an exceptional construction project crafted with precision and luxury finishes by Saiban Construction. Each detail reflects our commitment to quality and client satisfaction.'}
+                {project.description || 'This is an exceptional construction project crafted with precision and luxury finishes by Saibaan Construction. Each detail reflects our commitment to quality and client satisfaction.'}
               </p>
 
               {/* Project Stats Grid */}

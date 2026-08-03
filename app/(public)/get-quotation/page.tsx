@@ -5,7 +5,7 @@ import { generateMetadata } from '@/lib/utils/seo';
 
 export const metadata = generateMetadata({
   title: 'Get Quotation',
-  description: 'Request a customized quotation for your construction, renovation, or design project with Saiban Construction.',
+  description: 'Request a customized quotation for your construction, renovation, or design project with Saibaan Construction.',
 });
 
 export default function GetQuotationPage() {

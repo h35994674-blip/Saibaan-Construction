@@ -75,7 +75,7 @@ export function HeroSection() {
             className="text-body-lg text-[var(--text-secondary)] mb-10 max-w-2xl animate-fade-in-up"
             style={{ animationDelay: '300ms' }}
           >
-            From stunning architecture to flawless finishing. Saiban Construction delivers premium real estate and construction services across Pakistan.
+            From stunning architecture to flawless finishing. Saibaan Construction delivers premium real estate and construction services across Pakistan.
           </p>
 
           <div 

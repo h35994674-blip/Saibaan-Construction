@@ -7,7 +7,7 @@ import { getSiteSettings } from '@/lib/db/queries/settings';
 
 export const metadata = generateMetadata({
   title: 'Contact Us',
-  description: 'Get in touch with Saiban Construction in Peshawar. We are ready to answer your questions and start building your dream project.',
+  description: 'Get in touch with Saibaan Construction in Peshawar. We are ready to answer your questions and start building your dream project.',
 });
 
 export default async function ContactPage() {
@@ -115,7 +115,7 @@ export default async function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Saiban Construction Location"
+                  title="Saibaan Construction Location"
                   className="grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-out"
                 />
               </div>

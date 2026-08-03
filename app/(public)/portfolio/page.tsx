@@ -11,7 +11,7 @@ export const revalidate = 60;
 
 export const metadata = generateMetadata({
   title: 'Portfolio',
-  description: 'Explore our completed and ongoing projects across Pakistan. See the quality and craftsmanship that defines Saiban Construction.',
+  description: 'Explore our completed and ongoing projects across Pakistan. See the quality and craftsmanship that defines Saibaan Construction.',
 });
 
 export default function PortfolioPage({
@@ -28,7 +28,7 @@ export default function PortfolioPage({
         <div className="absolute inset-0 z-0">
           <img
             src="/portfolio-hero.jpg"
-            alt="Saiban Construction Portfolio"
+            alt="Saibaan Construction Portfolio"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#121214]/95 via-[#121214]/70 to-[#121214]/30" />

@@ -67,7 +67,7 @@ export default function Navbar() {
       <div className={`container ${styles.inner}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          <Image src="/logo.png" alt="Saiban Construction" width={128} height={128} quality={100} priority />
+          <Image src="/logo.png" alt="Saibaan Construction" width={128} height={128} quality={100} priority />
         </Link>
 
         {/* Desktop Nav */}

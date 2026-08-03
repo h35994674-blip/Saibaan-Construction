@@ -6,17 +6,17 @@ import { CTABanner } from '@/components/sections/home/CTABanner';
 import { Star } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Client Feedbacks | Saiban Construction',
-  description: 'Watch video reviews and read written feedback from satisfied Saiban Construction clients.',
+  title: 'Client Feedbacks | Saibaan Construction',
+  description: 'Watch video reviews and read written feedback from satisfied Saibaan Construction clients.',
 };
 
 const demoTestimonials = [
-  { id: '1', clientName: 'Ahmed Raza', projectType: 'Luxury Villa Construction', feedback: "Saiban Construction turned our dream home into a reality. Their attention to detail and commitment to quality is unmatched. The grey structure and finishing were absolutely flawless.", rating: 5, photoUrl: null, videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
-  { id: '2', clientName: 'Sana Mirza', projectType: 'Bespoke Interior Design', feedback: "We hired Saiban for our entire home interior and they exceeded every expectation. The level of craftsmanship was exceptional. Our guests are always amazed.", rating: 5, photoUrl: null, videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
+  { id: '1', clientName: 'Ahmed Raza', projectType: 'Luxury Villa Construction', feedback: "Saibaan Construction turned our dream home into a reality. Their attention to detail and commitment to quality is unmatched. The grey structure and finishing were absolutely flawless.", rating: 5, photoUrl: null, videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
+  { id: '2', clientName: 'Sana Mirza', projectType: 'Bespoke Interior Design', feedback: "We hired Saibaan for our entire home interior and they exceeded every expectation. The level of craftsmanship was exceptional. Our guests are always amazed.", rating: 5, photoUrl: null, videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
   { id: '3', clientName: 'Fatima Ali', projectType: 'Commercial Office Interior', feedback: "The interior design team completely transformed our workspace. It is now modern, highly functional, and our employees love working here. An extremely professional team.", rating: 5, photoUrl: null, videoUrl: null },
-  { id: '4', clientName: 'Usman Tariq', projectType: 'Full House Renovation', feedback: "Renovating an old house is always stressful, but Saiban made it completely seamless. They delivered on time and within budget without compromising on aesthetics.", rating: 5, photoUrl: null, videoUrl: null },
-  { id: '5', clientName: 'Bilal Hassan', projectType: 'Grey Structure', feedback: "From foundation to roof, Saiban's grey structure work was rock solid. They used premium materials and their engineers were on-site every single day to ensure quality.", rating: 5, photoUrl: null, videoUrl: null },
-  { id: '6', clientName: 'Rabia Khan', projectType: 'Landscaping & Outdoor', feedback: "Our garden and outdoor space now looks like something from a magazine. Saiban's landscaping team brought incredible creativity and executed it with perfection.", rating: 5, photoUrl: null, videoUrl: null },
+  { id: '4', clientName: 'Usman Tariq', projectType: 'Full House Renovation', feedback: "Renovating an old house is always stressful, but Saibaan made it completely seamless. They delivered on time and within budget without compromising on aesthetics.", rating: 5, photoUrl: null, videoUrl: null },
+  { id: '5', clientName: 'Bilal Hassan', projectType: 'Grey Structure', feedback: "From foundation to roof, Saibaan's grey structure work was rock solid. They used premium materials and their engineers were on-site every single day to ensure quality.", rating: 5, photoUrl: null, videoUrl: null },
+  { id: '6', clientName: 'Rabia Khan', projectType: 'Landscaping & Outdoor', feedback: "Our garden and outdoor space now looks like something from a magazine. Saibaan's landscaping team brought incredible creativity and executed it with perfection.", rating: 5, photoUrl: null, videoUrl: null },
 ];
 
 async function getTestimonials() {
@@ -51,7 +51,7 @@ export default async function FeedbacksPage() {
               Hear From Our <span className="text-gold">Clients</span>
             </h1>
             <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-8">
-              Watch video reviews and read written feedback from families, businesses, and investors who trusted Saiban Construction to build their legacy.
+              Watch video reviews and read written feedback from families, businesses, and investors who trusted Saibaan Construction to build their legacy.
             </p>
             
             <div className="flex items-center gap-4">

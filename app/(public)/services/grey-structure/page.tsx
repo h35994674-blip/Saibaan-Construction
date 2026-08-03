@@ -129,7 +129,7 @@ export default function GreyStructurePage() {
                 Grey structure is the hidden heroism of construction. Long before any tile is laid or paint applied, we build the load-bearing columns, concrete slabs, brick masonry, and steel reinforcements that determine whether a building stands for 30 years or 300.
               </p>
               <p className="text-[var(--text-secondary)] leading-relaxed mb-12">
-                At Saiban Construction, we treat every foundation pour and every RCC column with the same care a sculptor gives to stone. This is where excellence is born or buried.
+                At Saibaan Construction, we treat every foundation pour and every RCC column with the same care a sculptor gives to stone. This is where excellence is born or buried.
               </p>
               <div className="space-y-4">
                 {['RCC Columns & Beams', 'Reinforced Slab Work', 'Load-Bearing Masonry', 'Basement & Foundation Work'].map((item) => (

@@ -6,7 +6,7 @@ async function main() {
     {
       clientName: 'Ahmed Raza',
       projectType: 'Luxury Villa Construction',
-      feedback: 'Saiban Construction turned our dream home into a reality. Their attention to detail and commitment to quality is unmatched. The grey structure and finishing were absolutely flawless.',
+      feedback: 'Saibaan Construction turned our dream home into a reality. Their attention to detail and commitment to quality is unmatched. The grey structure and finishing were absolutely flawless.',
       rating: 5,
       photoUrl: null,
       videoUrl: null,
@@ -15,7 +15,7 @@ async function main() {
     {
       clientName: 'Sana Mirza',
       projectType: 'Bespoke Interior Design',
-      feedback: 'We hired Saiban for our entire home interior and they exceeded every expectation. The level of craftsmanship was exceptional. Our guests are always amazed at how beautiful our home looks.',
+      feedback: 'We hired Saibaan for our entire home interior and they exceeded every expectation. The level of craftsmanship was exceptional. Our guests are always amazed at how beautiful our home looks.',
       rating: 5,
       photoUrl: null,
       videoUrl: null,
@@ -24,7 +24,7 @@ async function main() {
     {
       clientName: 'Usman Tariq',
       projectType: 'Full House Renovation',
-      feedback: 'Renovating an old house is always stressful, but Saiban made it completely seamless. They delivered on time and within budget without compromising on aesthetics. Highly recommended.',
+      feedback: 'Renovating an old house is always stressful, but Saibaan made it completely seamless. They delivered on time and within budget without compromising on aesthetics. Highly recommended.',
       rating: 5,
       photoUrl: null,
       videoUrl: null,
@@ -42,7 +42,7 @@ async function main() {
     {
       clientName: 'Bilal Hassan',
       projectType: 'Grey Structure',
-      feedback: "From foundation to roof, Saiban's grey structure work was rock solid. They used premium materials and their engineers were on-site every single day to ensure quality.",
+      feedback: "From foundation to roof, Saibaan's grey structure work was rock solid. They used premium materials and their engineers were on-site every single day to ensure quality.",
       rating: 5,
       photoUrl: null,
       videoUrl: null,
@@ -53,7 +53,7 @@ async function main() {
     {
       clientName: 'Kamran Sheikh',
       projectType: '1 Kanal House Build',
-      feedback: 'Watch my full video review of Saiban Construction. They built our 1 Kanal house from scratch and the results are breathtaking.',
+      feedback: 'Watch my full video review of Saibaan Construction. They built our 1 Kanal house from scratch and the results are breathtaking.',
       rating: 5,
       photoUrl: null,
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
@@ -62,7 +62,7 @@ async function main() {
     {
       clientName: 'Nadia Khan',
       projectType: 'Luxury Interior Design',
-      feedback: 'I recorded a full walkthrough of our newly designed home by Saiban. Every room is a masterpiece.',
+      feedback: 'I recorded a full walkthrough of our newly designed home by Saibaan. Every room is a masterpiece.',
       rating: 5,
       photoUrl: null,
       videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',

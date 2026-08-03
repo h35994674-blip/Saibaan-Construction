@@ -10,7 +10,7 @@ export const dynamic = 'force-static';
 
 export const metadata = generateMetadata({
   title: 'Who We Are',
-  description: 'Learn about Saiban Construction, our mission, vision, and the expert team behind our success in the real estate and construction industry.',
+  description: 'Learn about Saibaan Construction, our mission, vision, and the expert team behind our success in the real estate and construction industry.',
 });
 
 export default function AboutPage() {
@@ -35,7 +35,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-[var(--text-secondary)] text-lg leading-relaxed mb-10">
                 <p>
-                  Saiban Construction was founded with a singular vision: to elevate the standard of real estate and construction across the nation. Over the years, we have grown from a modest team into a powerhouse of architectural innovation and structural integrity.
+                  Saibaan Construction was founded with a singular vision: to elevate the standard of real estate and construction across the nation. Over the years, we have grown from a modest team into a powerhouse of architectural innovation and structural integrity.
                 </p>
                 <p>
                   We believe that every structure has a soul, and every project is an opportunity to craft something enduring. Our commitment to uncompromising quality, transparent processes, and client-centric solutions has positioned us as trusted leaders in the industry.
@@ -75,7 +75,7 @@ export default function AboutPage() {
                   {/* Floating Stats Card */}
                   <div className="bg-[var(--bg-surface-2)] border border-[var(--gold-border)] rounded-2xl p-6 md:p-8 relative overflow-hidden group">
                     <div className="absolute top-0 right-0 w-24 h-24 bg-gold/10 rounded-bl-[100px] transition-transform duration-500 group-hover:scale-110" />
-                    <h3 className="text-4xl md:text-5xl font-heading font-bold text-gold mb-2">10+</h3>
+                    <h3 className="text-4xl md:text-5xl font-heading font-bold text-gold mb-2">40+</h3>
                     <p className="text-white font-medium text-sm md:text-base uppercase tracking-wider">Years of Excellence</p>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ export default function AboutPage() {
           <div className="bg-[var(--bg-surface-2)] border border-[var(--border)] rounded-3xl p-12 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 relative overflow-hidden">
              <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-gold/10 to-transparent opacity-50 pointer-events-none" />
              <div className="max-w-2xl relative z-10">
-               <h3 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Meet The Experts Behind Saiban</h3>
+               <h3 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">Meet The Experts Behind Saibaan</h3>
                <p className="text-lg text-[var(--text-secondary)]">Discover the passionate team of architects, engineers, and designers who make every project a masterpiece.</p>
              </div>
              <Link href="/contact" className="relative z-10 whitespace-nowrap btn-primary group flex items-center gap-3 bg-gold hover:bg-gold-light text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">

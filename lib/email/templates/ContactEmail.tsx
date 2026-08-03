@@ -33,7 +33,7 @@ export const ContactEmail: React.FC<Readonly<ContactEmailProps>> = ({
     </div>
 
     <p style={{ marginTop: '30px', fontSize: '12px', color: '#888' }}>
-      This email was sent from the Saiban Construction website contact form.
+      This email was sent from the Saibaan Construction website contact form.
     </p>
   </div>
 );

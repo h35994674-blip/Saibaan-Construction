@@ -57,7 +57,7 @@ export default async function Footer() {
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/logo.png"
-                alt="Saiban Construction"
+                alt="Saibaan Construction"
                 width={100}
                 height={100}
                 className="rounded-full object-cover shadow-lg"
@@ -157,7 +157,7 @@ export default async function Footer() {
         <div className="container py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-[var(--text-muted)]">
-              © {new Date().getFullYear()} Saiban Construction. All rights reserved.
+              © {new Date().getFullYear()} Saibaan Construction. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link href="/contact" className="text-xs text-[var(--text-muted)] hover:text-gold transition-colors">Privacy Policy</Link>

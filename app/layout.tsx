@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: [
     'construction Pakistan', 'architecture Lahore', 'interior design Pakistan',
     'grey structure', 'renovation Pakistan', 'furnishing', 'landscaping Pakistan',
-    'Saiban Construction',
+    'Saibaan Construction',
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,

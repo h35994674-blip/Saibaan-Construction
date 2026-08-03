@@ -107,7 +107,7 @@ export function QuotationForm() {
         </div>
         <h3 className="text-3xl font-heading font-bold text-white mb-4">Request Submitted!</h3>
         <p className="text-[var(--text-muted)] text-lg max-w-md mx-auto mb-8">
-          Thank you for choosing Saiban Construction. Our team will review your requirements and get back to you with a customized quotation shortly.
+          Thank you for choosing Saibaan Construction. Our team will review your requirements and get back to you with a customized quotation shortly.
         </p>
         <Button onClick={() => window.location.reload()} variant="outline">
           Submit Another Request

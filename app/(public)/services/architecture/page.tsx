@@ -43,7 +43,7 @@ export default function ArchitectureServicePage() {
           <div className="max-w-4xl animate-fade-in-up">
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[1px] w-12 bg-gold" />
-              <span className="text-gold font-bold tracking-widest uppercase text-sm">Saiban Core Services</span>
+              <span className="text-gold font-bold tracking-widest uppercase text-sm">Saibaan Core Services</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-tight mb-8">
               Mastering <br/>
@@ -91,7 +91,7 @@ export default function ArchitectureServicePage() {
               </h2>
               <div className="prose prose-invert prose-lg max-w-none text-[var(--text-secondary)]">
                 <p>
-                  At Saiban Construction, architecture is more than just drafting blueprints—it is the delicate balance of environment, purpose, and art. We approach every residential and commercial project with a holistic mindset, ensuring that the structures we design not only look breathtaking but perform flawlessly.
+                  At Saibaan Construction, architecture is more than just drafting blueprints—it is the delicate balance of environment, purpose, and art. We approach every residential and commercial project with a holistic mindset, ensuring that the structures we design not only look breathtaking but perform flawlessly.
                 </p>
                 <p>
                   Our team of visionary architects and meticulous engineers work in lockstep to push boundaries, resulting in spaces that inspire their inhabitants and stand the test of time.

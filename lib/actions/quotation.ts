@@ -23,7 +23,7 @@ export async function submitQuotationRequest(data: {
       await resend.emails.send({
         from: FROM_EMAIL,
         to: [NOTIFICATION_EMAIL],
-        subject: `New Quotation Request from ${data.name} | Saiban Construction`,
+        subject: `New Quotation Request from ${data.name} | Saibaan Construction`,
         react: QuotationEmail(data),
       });
     } else {

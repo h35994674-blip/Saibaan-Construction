@@ -259,7 +259,7 @@ export function FurnishingClient() {
               </h2>
               <div className="flex items-center gap-4">
                 <div className="w-16 h-[2px] bg-gold" />
-                <span className="text-gold text-sm font-bold tracking-widest uppercase">The Saiban Standard</span>
+                <span className="text-gold text-sm font-bold tracking-widest uppercase">The Saibaan Standard</span>
               </div>
             </div>
 

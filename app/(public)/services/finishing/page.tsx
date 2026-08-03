@@ -51,7 +51,7 @@ export default function FinishingPage() {
           </h1>
           
           <p className="text-xl text-[var(--text-secondary)] max-w-2xl mx-auto mb-12 font-medium">
-            Where architecture meets reality. Zero-tolerance execution and flawless surfaces that define the Saiban Standard of excellence.
+            Where architecture meets reality. Zero-tolerance execution and flawless surfaces that define the Saibaan Standard of excellence.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-8 sm:gap-12 mt-8">
@@ -178,14 +178,14 @@ export default function FinishingPage() {
         </div>
       </section>
 
-      {/* 4. The Saiban Standard */}
+      {/* 4. The Saibaan Standard */}
       <section className="py-24 bg-[#080808] relative overflow-hidden">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '100px 100px' }} />
         
         <div className="container relative z-10 max-w-4xl text-center">
           <ShieldCheck size={48} className="text-gold mx-auto mb-8" />
-          <h2 className="text-3xl md:text-5xl font-heading font-black text-white uppercase tracking-tight mb-8">The Saiban Standard</h2>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-white uppercase tracking-tight mb-8">The Saibaan Standard</h2>
           <p className="text-xl text-[var(--text-secondary)] leading-relaxed font-light">
             Before we hand over the keys, a dedicated quality control inspector audits the property. Using specialized lighting to check for wall imperfections, levels to verify flooring, and multi-point checklists for woodwork, we guarantee the finish meets our uncompromising standard.
           </p>

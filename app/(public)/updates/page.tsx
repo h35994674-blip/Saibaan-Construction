@@ -12,7 +12,7 @@ export const revalidate = 60;
 
 export const metadata = generateMetadata({
   title: 'Updates & News',
-  description: 'Stay informed with the latest news, construction updates, and industry insights from Saiban Construction.',
+  description: 'Stay informed with the latest news, construction updates, and industry insights from Saibaan Construction.',
 });
 
 export default function UpdatesPage() {
@@ -25,7 +25,7 @@ export default function UpdatesPage() {
         <div className="container relative z-10 text-center max-w-3xl mx-auto animate-fade-in-up">
           <div className="inline-flex items-center gap-3 mb-6 px-4 py-2 rounded-full border border-[var(--gold-border)] bg-[var(--gold-subtle)]">
             <Newspaper size={14} className="text-gold" />
-            <span className="text-gold text-xs font-bold tracking-widest uppercase">Saiban Insights</span>
+            <span className="text-gold text-xs font-bold tracking-widest uppercase">Saibaan Insights</span>
           </div>
           <h1 className="font-heading font-black text-white text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">
             Updates &<br/>

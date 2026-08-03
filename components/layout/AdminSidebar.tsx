@@ -25,7 +25,7 @@ export function AdminSidebar() {
     <aside className="w-64 bg-[#111] border-r border-[#333] h-screen sticky top-0 flex flex-col">
       <div className="p-6 border-b border-[#333]">
         <Link href="/">
-          <Image src="/logo.png" alt="Saiban Construction" width={88} height={88} quality={100} className="rounded-full object-cover" />
+          <Image src="/logo.png" alt="Saibaan Construction" width={88} height={88} quality={100} className="rounded-full object-cover" />
         </Link>
         <div className="mt-4 text-xs font-bold text-[var(--gold)] tracking-widest uppercase">Admin Panel</div>
       </div>

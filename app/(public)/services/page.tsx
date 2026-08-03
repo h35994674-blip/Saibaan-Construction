@@ -19,7 +19,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 z-0">
           <img
             src="/services-hero.jpg"
-            alt="Saiban Construction Services"
+            alt="Saibaan Construction Services"
             className="w-full h-full object-cover object-center"
           />
           {/* Dark overlay — gradient from bottom to ensure text is always readable */}

@@ -34,9 +34,9 @@ export function WhyChooseUs() {
           
           {/* Left Column: Text Content */}
           <div className="max-w-xl">
-            <span className="font-heading italic text-[var(--gold)] text-2xl mb-4 block">The Saiban Advantage</span>
+            <span className="font-heading italic text-[var(--gold)] text-2xl mb-4 block">The Saibaan Advantage</span>
             <h2 className="text-display text-white mb-6 leading-[1.1] text-5xl md:text-6xl">
-              Why Choose<br/>Saiban Construction?
+              Why Choose<br/>Saibaan Construction?
             </h2>
             <p className="text-[var(--text-muted)] text-lg">
               We don't just build structures; we build trust. Discover what sets us apart as Pakistan's premier construction and design firm.
