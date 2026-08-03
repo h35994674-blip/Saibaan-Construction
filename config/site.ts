@@ -80,9 +80,9 @@ export const siteConfig = {
     },
   ],
   stats: [
-    { value: 150, suffix: '+', label: 'Projects Completed' },
-    { value: 10, suffix: '+', label: 'Years of Experience' },
-    { value: 200, suffix: '+', label: 'Happy Clients' },
+    { value: 450, suffix: '+', label: 'Projects Completed' },
+    { value: 40, suffix: '+', label: 'Years of Experience' },
+    { value: 300, suffix: '+', label: 'Happy Clients' },
     { value: 5, suffix: '', label: 'Cities Covered' },
   ],
 };
