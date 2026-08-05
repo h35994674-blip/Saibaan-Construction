@@ -38,7 +38,7 @@ export function HeroSection() {
           className="w-full h-full object-cover opacity-60"
           poster="/og-image.jpg"
         >
-          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="https://mcolrfaixbmbxpivdxzq.supabase.co/storage/v1/object/public/Uploads/video.mp4" type="video/mp4" />
         </video>
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-black/40 to-black/20" />
