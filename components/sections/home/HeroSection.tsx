@@ -36,7 +36,6 @@ export function HeroSection() {
           muted
           playsInline
           className="w-full h-full object-cover opacity-60"
-          poster="/og-image.jpg"
         >
           <source src="https://mcolrfaixbmbxpivdxzq.supabase.co/storage/v1/object/public/Uploads/video.mp4" type="video/mp4" />
         </video>
